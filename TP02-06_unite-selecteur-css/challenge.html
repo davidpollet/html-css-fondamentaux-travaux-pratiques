@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    body {
+      background: #f1f1f1;
+      font-size: 1.125rem;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    main {
+      background: #fff;
+      max-width: 80ch;
+      margin: 3rem auto;
+      padding: 2rem;
+      box-shadow:  0 8px 24px rgba(0,0,0,.2);
+      border-radius: 8px;
+    }
+
+    main a {color: currentColor}
+    main a:hover,
+    main a:focus {color: blue}
+
+    h2 {
+      margin-top: 2.5rem;
+    }
+
+    h3 {margin-bottom: 1rem;}
+    .rule + h3 {
+      margin-top: 2rem;
+    }
+
+    .form-set {
+      display: flex;
+      align-items: baseline;
+      margin: .5rem 0;
+    }
+
+    [type="checkbox"] {
+      margin-right: 0.5rem;
+    }
+
+    label {
+      transition: 300ms ease-in-out color;
+    }
+
+    [type="checkbox"]:checked + label {
+      color: green;
+      text-decoration: line-through ;
+    }
+
+    .callout {
+      background: #f1f1f1;
+      padding: .5em;
+      border-radius: 8px;
+      display: flex;
+    }
+
+    .callout:before {
+      content:"";
+      margin: auto .75em;
+      font-size: 1rem;
+    }
+
+    .callout.caution:before {content:"⚠️"}
+
+    code {
+      margin: 0 !important;
+      font-family: monospace;
+      line-height:normal;
+      background:#ededed;
+      color:#EB5757;
+      border-radius:3px;
+      font-size:.85em;
+      padding:0.2em 0.4em
+    }
+
+    .danger-color {color: #e03e3e}
+
+  </style>
+</head>
+<body>
+
+  <main>
+    <h2>Challenge sélecteurs CSS</h2>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-001">
+        <label for="rule-001">
+          Terminez le jeu <a href="https://flukeout.github.io/">CSS Diner</a>
+        </label>
+      </div>
+    </div>
+
+
+
+
+    <h2>Challenge unités CSS et responsive</h2>
+    <h3>1. Mettre en place le contenu</h3>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-002">
+        <label for="rule-002">
+          Créez un fichier HTML
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-003">
+        <label for="rule-003">
+          Créez une balise <code>main</code> dans laquelle vous allez mettre tout le HTML qui suit
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-004">
+        <label for="rule-004">
+          Créez un conteneur avec un <code>id</code> nommé <em>conteneur-em</em>
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-005">
+        <label for="rule-005">
+            À l'intérieur, placez <a href="https://www.pexels.com/photo/business-code-coding-computer-270360/">cette image</a> en en-tête, un <code>h1</code>, quatre <code>p</code> que vous remplissez avec <a href="https://loremipsum.io/fr/">un générateur de faux texte</a>, un <code>h2</code> et une liste non ordonnée de dix items.
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-006">
+        <label for="rule-006">
+          Dupliquer le conteneur avec son contenu et changer l'<code>id</code> par <em>conteneur-rem</em>
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-007">
+        <label for="rule-007">
+          Ajoutez un <code>hr</code> entre les deux conteneurs
+        </label>
+      </div>
+    </div>
+
+    <h3>2. CSS Challenge</h3>
+    <div class="callout caution">
+      <p>
+        Toutes les valeurs données en pixels sont à déclarer en <code>em</code>. Vous faire la conversion et vérifier dans la console du navigateur que votre valeur est correct.
+      </p>
+    </div>
+    <p><strong class="danger-color">Interdiction d'utiliser un convertisseur en ligne</strong></p>
+    <p>1. Vous risquez de vous planter et 2. Vous n'aurez pas progressé.</p>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-008a">
+        <label for="rule-008a">
+          Le box-model de tous les éléments en <code>border-box</code>
+        </label>
+      </div>
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-008">
+        <label for="rule-008">
+          body : <code>padding</code> de 32 pixels de tous les côtés
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-009">
+        <label for="rule-009">
+          main : largeur de 800 pixels maximum, arrière-plan en #fff et centrer horizontalement
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-010">
+        <label for="rule-010">
+          main : <code>padding</code> de 24 pixels
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-011">
+        <label for="rule-011">
+          #conteneur-em / h1 : <code>font-size</code> à 28 pixels
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-012">
+        <label for="rule-012">
+          #conteneur-em / premier paragraphe à 19 pixels et de couleur noir. Les autres en #565656
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-013">
+        <label for="rule-013">
+          #conteneur-em : quand un p suit un autre p, ajoutez une marge supérieure de 16 pixels
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-0014">
+        <label for="rule-0014">
+          #conteneur-em / h2 : <code>font-size</code> à 24 pixels
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-015">
+        <label for="rule-015">
+          #conteneur-em : marge supérieure de 24 pixels sur le <code>h2</code>
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-016">
+        <label for="rule-016">
+          #conteneur-em : marge supérieure de 16 pixels sur les listes non-ordonnée uniquement quand elles viennent après un <code>h2</code>
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-017">
+        <label for="rule-017">
+          Un élément de liste sur deux doit être en gras.
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-018">
+        <label for="rule-018">
+          Le dernier élément de la liste doit être de couleur rouge
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-019">
+        <label for="rule-019">
+          À partir de 768 pixels de large, <code>main</code> passe à un <code>font-size</code> de 18 pixels
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-020">
+        <label for="rule-020">
+          #conteneur-em / h1 : <code>font-size</code> à 36 pixels
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-021">
+        <label for="rule-021">
+          #conteneur-em / premier paragraphe à 24 pixels. Les autres en 20 pixels.
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-022">
+        <label for="rule-022">
+          #conteneur-em : quand un <code>p</code> suit un autre <code>p</code>, ajoutez une marge supérieure de 16 pixels
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-023">
+        <label for="rule-023">
+          #conteneur-em : marge supérieure de 24 pixels sur le <code>h2</code> et de 16 pixels sur les listes non-ordonnée uniquement quand elles viennent après un <code>h2</code>
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-024">
+        <label for="rule-024">
+          Répétez tous les challenges ci-dessus dans le conteneur <em>conteneur-rem</em> mais cette fois-ci en convertissant les valeurs en pixels en <code>rem</code>
+        </label>
+      </div>
+    </div>
+
+
+
+
+    <h2>Challenge position relative et absolute</h2>
+    <div class="callout caution">Vous n'avez pas besoin de convertir les unités pour ce challenge</div>
+    <h3>Position relative</h3>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-025">
+        <label for="rule-025">
+          Créer un conteneur avec un id <em>challenge-relative</em>
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-026">
+        <label for="rule-026">
+          Créez 1 conteneur carré de 250 × 250 pixels, arrière-plan rouge
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-027">
+        <label for="rule-027">
+          Créez 1 conteneur carré de 250 × 250 pixels, arrière-plan vert
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-028">
+        <label for="rule-028">
+          Créez 1 conteneur carré de 250 × 250 pixels, arrière-plan bleu
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-029">
+        <label for="rule-029">
+          Avec une position <code>relative</code> et les propriétés <code>left</code>, <code>right</code>, <code>top</code>, <code>bottom</code>, placez le <code>carré</code> vert au-dessus du bleu et le carré rouge au-dessus du vert. Seul quelques pixels des carrés doivent rester pour montrer qu'ils sont bien en dessous
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-030">
+        <label for="rule-030">
+          Créer un conteneur avec un id <em>challenge-relative-2</em>
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-031">
+        <label for="rule-031">
+          Recréez les 3 carrés
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-032">
+        <label for="rule-032">
+          Avec position <code>relative</code> et les propriétés <code>left</code>, <code>right</code>, <code>top</code>, <code>bottom</code>, placez les 3 carrés côte à côte.
+        </label>
+      </div>
+    </div>
+
+
+
+    <h3>Position relative</h3>
+    <div class="callout caution">Hormis le conteneur principal, tous les éléments doivent être en position <code>absolute</code></div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-033">
+        <label for="rule-033">
+          Créer un conteneur avec un id <em>challenge-absolute</em>
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-034">
+        <label for="rule-034">
+          #challenge-absolute : arrière-plan <code>#e1e1e1</code>, width 100% et une hauteur de 256 px
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-035">
+        <label for="rule-035">
+          Créez un carré de couleur <code>#fb1</code> de 64 × 64 pixels et placez-le à 15 px du coin supérieur droit
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-036">
+        <label for="rule-036">
+          Créez une bande verticale bleue de 96 px de large et situé à 25 px sur la droite. La bande doit prendre toute la hauteur du conteneur sans définir un <code>height</code>.
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-037">
+        <label for="rule-037">
+          Créez une bande horizontale cyan de 20 pixels de large situé à 20 px du bas. La bande doit prendre toute la largeur sans définir de <code>width</code>
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-038">
+        <label for="rule-038">
+          Créez un rond vert de 64 × 64 pixels et centrez-le verticalement et horizontalement
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-040">
+        <label for="rule-040">
+          Assurez-vous que chaques éléments créés soit visible
+        </label>
+      </div>
+    </div>
+
+
+
+
+    <h2>Challenge responsive</h2>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-041">
+        <label for="rule-041">
+          body, arrière-plan en <code>#208075</code>
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-042">
+        <label for="rule-042">
+          body arrière-plan en <code>#663399</code> entre 600 et 767 pixels de large
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-043">
+        <label for="rule-043">
+          body, arrière-plan en <code>#bada55</code> entre 768 et 1023 pixels de large
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-044">
+        <label for="rule-044">
+          body, arrière-plan en <code>#c55</code> entre 1024 et 1280 pixels
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-045">
+        <label for="rule-045">
+          body, à partir de 1280 pixels de large, arrière-plan en <code>#5a17ed</code>
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-046">
+        <label for="rule-046">
+          body, si la fenêtre à une hauteur inférieure à 350 pixels, son arrière-plan passe en <code>#1d1075</code>
+        </label>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-047">
+        <label for="rule-047">
+          Faire correspondre les couleurs des titres avec les couleurs d'arrière-plan
+        </label>
+      </div>
+    </div>
+
+
+
+
+  </main>
+
+</body>
+</html>

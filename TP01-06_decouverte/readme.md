@@ -42,7 +42,7 @@ CSS (Cascade Style Sheet) est un langage de présentation qui permet aux navigat
 La convention actuelle est de nommer son fichier css `style.css`. L'attribut `media` existe parce que CSS n'est pas uniquement destiné aux écrans. On peut aussi styler un document pour son rendu en impression par exemple.
 ### Déclaration d'une règle CSS
 ````CSS
-selecteur {propriété: valeur;}
+sélecteur {propriété: valeur;}
 ````
 - Un sélecteur sert à déclarer aux navigateurs pour quels éléments il doit appliquer ce style.
 - Une propriété est le nom de la propriété que l'on souhaite changer (taille de police par exemple).
@@ -51,7 +51,7 @@ selecteur {propriété: valeur;}
 ````CSS
 p {color: blue}
 ````
-Avec cette régle, tous les paragraphes `<p>` du site seront colorés en bleu. Pour les `id`, les `class`, et les `attributs`, le sélecteur porte cette syntaxe :
+Avec cette règle, tous les paragraphes `<p>` du site seront colorés en bleu. Pour les `id`, les `class`, et les `attributs`, le sélecteur porte cette syntaxe :
 ````CSS
 #id {}
 .classe {}
@@ -79,17 +79,17 @@ Pour départager deux styles différents pour un même sélecteur, le navigateur
 - Quel sélecteur a le plus de poids
 - Et si le poids est égal, il va sélectionner le style qu'il a trouvé en dernier.
 
-Pour peser des sélecteurs, le navigateur leur applique les scores suivants : +100 points pour les `#id`, +10 points pour les `.class`, attributs `[attr]` et pseudo-classes et 1 point pour les éléments (ex: `p`) et pseudos-éléments. Ce poids porte le nom de **specificité**
+Pour peser des sélecteurs, le navigateur leur applique les scores suivants : +100 points pour les `#id`, +10 points pour les `.class`, attributs `[attr]` et pseudo-classes et 1 point pour les éléments (ex: `p`) et pseudos-éléments. Ce poids porte le nom de **spécificité**
 Pour mieux comprendre la spécificité CSS ➡ [calculette de spécificité](https://specificity.keegan.st/)
 
 ### Pseudo-classes
-Une pseudo-classe est une expression qu'on attache à un sélecteur pour le styler dans un contexte plus spécifique. Par exemple, je peux avoir besoir de changer la couleur d'un lien quand je le survole ; où bien agrandir la taille du premier paragraphe se trouvant dans une balise `<article>` sans toucher aux autres. Voici quelques exemples :
+Une pseudo-classe est une expression qu'on attache à un sélecteur pour le styler dans un contexte plus spécifique. Par exemple, je peux avoir besoin de changer la couleur d'un lien quand je le survole ; où bien agrandir la taille du premier paragraphe se trouvant dans une balise `<article>` sans toucher aux autres. Voici quelques exemples :
 ````CSS
-/* change la couleur quand je survol un lien */
+/* change la couleur quand je survole un lien */
 a:hover {color:#fb1}
 
 /*
-   Change la couleur de bordure d'un textarea quand il est selectionné
+   Change la couleur de bordure d'un textarea quand il est sélectionné
    par le clavier (TAB) ou par la souris
 */
 textarea:focus {border-color: red}
@@ -121,7 +121,7 @@ Les pseudo-éléments servent à styler une fraction d'un élément comme sa pre
 p:first-letter {font-size: 22px};
 p:first-line {color: ~#bada55;}
 
-/* Pseudo élément pour créer des éléments vituels*/
+/* Pseudo élément pour créer des éléments virtuels*/
 /* Injecte "coucou" avant le texte <p>*/
 p:before {content:"coucou"}
 /* Injecte "coucou" après le texte <p> */
@@ -132,7 +132,7 @@ p:before {content:"beuh !!"}
 ### Appeler un fichier avec CSS
 Pour dire au navigateur d'aller chercher une image d'arrière-plan par exemple, on déclare utilise `url("chemin/fichier.jpg")` :
 `````CSS
-selecteur {background-image: url("chemin/fichier.jpg")}
+sélecteur {background-image: url("chemin/fichier.jpg")}
 ``````
 ## HTML et CSS, chacun son business
 Il est important de comprendre qu'HTML sert pour livrer du contenu et CSS pour dire comment le présenter. On ne se préoccupe jamais du rendu d'un texte dans le HTML. Un texte tout en capitales doit être fait avec CSS par exemple. Un texte en gras doit être une information importante. Si c'est pour le style, alors c'est CSS qui doit gérer ça.

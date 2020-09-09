@@ -4,10 +4,11 @@ Je fais des vacations à l'IUT du Littoral Côte d'Opale où je transmet mes con
 ## Les modules
 Un module par semaine, sauf pour les consolidations qui durent 2 semaines
 1. **HTML et CSS exploration**\
-Objectif : Comprendre le rôle d'HTML et de CSS et leur syntaxe\
-[Accéder au cours et TP](/TP01-06_decouverte)
+Comprendre le rôle d'HTML et de CSS et leur syntaxe\
+[Accéder au cours et TP](./TP01-06_decouverte)
 2. **CSS Kickstart**\
-Objectif : Box model, selecteurs, unités, positionnement et média queries et compatibilité avec les navigateurs.
+Box model, sélecteurs, unités, positionnement et média queries et compatibilité avec les navigateurs.
+[Accéder au cours et TP](./TP02-06_unite-selecteur-css)
 3. **Mettre en page avec CSS**\
 Objectif : comment créer une grille de mise en page et la faire évoluer en responsive
 4. **Débugguer et intégrer d'un plugin JS**\
