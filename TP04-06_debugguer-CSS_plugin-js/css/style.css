@@ -1,0 +1,160 @@
+
+body {
+  max-width: 1280px;
+  padding: 2em 2em;
+  margin: 0 auto;
+}
+
+
+.images {
+  background: #bad;
+  display: grid;
+  gap: .5rem;
+  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+  padding: 2em;
+}
+
+
+.images figure {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  border-radius: 12;
+  margin: 0;
+}
+
+
+
+.images figcaption {
+  font-weight: bold;
+  color: #fff;
+  padding: 1em;
+}
+
+
+
+main {
+  padding: 2em;
+  color: #555555;
+}
+
+
+main img {
+  max-width: none;
+}
+
+main h1 {
+  text-align: center;
+  margin: 2em;
+}
+
+
+main p:first-child {
+  font-size: 1.5rem;
+}
+
+
+main p:last-child {
+  padding: 1em;
+  border: 1px solid darkorchid;
+}
+
+
+main ul {
+  font-size: 1.125em;
+  padding-left: 0;
+}
+
+main ul li {
+  color: darkorchid;
+  font-size: 1.25em;
+}
+
+
+main ul li:not(:first-child) {
+  margin-top: .5rem;
+}
+
+
+main h4 {
+  transform: scale(.66);
+}
+
+
+.cartes {
+  position: relative;
+  padding-top: 5em;
+}
+
+
+.carte-image {
+  border: 2px solid #f1f1f1;
+  margin-top: 1.5em;
+  padding: 2em 2em 212px 2em;
+}
+
+.carte-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 196px;
+}
+
+
+
+.carte-verticale {
+  max-width: 360px;
+}
+
+.carte-verticale img {
+  position: relative;
+  z-index: 1;
+}
+
+.carte-verticale p {
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  margin: 0 1em;
+  padding: 1em;
+  position: relative;
+  bottom: 5em;
+  z-index: 5;
+}
+
+
+
+
+
+body .section {
+  background: darkorchid;
+  color: #fff;
+  padding: 2em;
+}
+
+
+.ui-black {
+  background: #000;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#images figure:nth-of-type(2) img {filter: blur(20px)}
+#images figure:nth-of-type(5) img {transform: scale(-1);}

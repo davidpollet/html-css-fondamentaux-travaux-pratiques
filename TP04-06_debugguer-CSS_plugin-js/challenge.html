@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    body {
+      background: #f1f1f1;
+      font-size: 1.125rem;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    main {
+      background: #fff;
+      max-width: 80ch;
+      margin: 3rem auto;
+      padding: 2rem;
+      box-shadow:  0 8px 24px rgba(0,0,0,.2);
+      border-radius: 8px;
+    }
+
+    main a {color: currentColor}
+    main a:hover,
+    main a:focus {color: blue}
+
+    h2 {
+      margin-top: 2.5rem;
+    }
+
+    h3 {margin-bottom: 1rem;}
+    .rule + h3 {
+      margin-top: 2rem;
+    }
+
+    .form-set {
+      display: flex;
+      align-items: baseline;
+      margin: .5rem 0;
+    }
+
+    [type="checkbox"] {
+      margin-right: 0.5rem;
+    }
+
+    label {
+      transition: 300ms ease-in-out color;
+    }
+
+    [type="checkbox"]:checked + label {
+      color: green;
+      text-decoration: line-through ;
+    }
+
+    .callout {
+      background: #f1f1f1;
+      padding: .5em;
+      border-radius: 8px;
+      display: flex;
+    }
+
+    .callout:before {
+      content:"";
+      margin: auto .75em;
+      font-size: 1rem;
+    }
+
+    .callout.caution:before {content:"⚠️"}
+
+    code {
+      margin: 0 !important;
+      font-family: monospace;
+      line-height:normal;
+      background:#ededed;
+      color:#EB5757;
+      border-radius:3px;
+      font-size:.85em;
+      padding:0.2em 0.4em
+    }
+
+    #done + label img {
+      display: none;
+    }
+
+    #done:checked + label img {
+      display: block;
+    }
+
+    .danger-color {color: #e03e3e}
+
+  </style>
+</head>
+<body>
+
+  <main>
+    <h2>Challenge intégration Debugging</h2>
+    <img src="./img/header-challenge.gif" alt="">
+
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-001">
+        <label for="rule-001">
+          Le CSS ne fonctionne pas ! 😮
+        </label>
+      </div>
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-001">
+        <label for="rule-001">
+          Il y a une barre de scroll horizontale et je ne sais pas d'où elle vient ! 😮
+        </label>
+      </div>
+      <h3>Galerie des 12 photos</h3>
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-001a">
+        <label for="rule-001a">
+          Les images de la galerie photos ne s'affiche pas ! 😮
+        </label>
+      </div>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-002">
+          <label for="rule-002">
+            J'ai fais le CSS pour créer une grille avec les images mais ça ne marche pas ! 😮
+          </label>
+        </div>
+      </div>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-002a">
+          <label for="rule-002a">
+            Cool, la grille est réparée mais maintenant, les figcaptions sont invisible ! 🙁
+          </label>
+        </div>
+      </div>
+
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-002b">
+          <label for="rule-002b">
+            Les images ne sont pas comme ça sur la maquette ! 🙁
+          </label>
+        </div>
+      </div>
+
+
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-003">
+          <label for="rule-003">
+            Les items de la galerie devraient avoir les coins arrondies mais ils sont carrés ! 😮
+          </label>
+        </div>
+      </div>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-004">
+          <label for="rule-004">
+            Pourquoi les image n'épouse pas le bords arrondis de son conteneur ? 🤔
+          </label>
+        </div>
+      </div>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-00">
+          <label for="rule-00">
+            La 2<sup>éme</sup> image est floue. C'est bizarre non ? 🤔
+          </label>
+        </div>
+      </div>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-006">
+          <label for="rule-006">
+            La 5<sup>éme</sup> image est à l'envers. 🙃
+          </label>
+        </div>
+      </div>
+      <h3>Main</h3>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-006a">
+          <label for="rule-006a">
+            L'image dans <code>main</code> est trop grande ! 😱
+          </label>
+        </div>
+      </div>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-007">
+          <label for="rule-007">
+            J'ai mis un font-size de 1.5em sur le premier paragraphe dans <code>main</code> mais ça ne marche pas ! 😮
+          </label>
+        </div>
+      </div>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-008">
+          <label for="rule-008">
+            Je veux que le dernier paragraphe de <code>main</code> ait un padding de 1em et une bordure mais je n'y arrive pas. 😫
+          </label>
+        </div>
+      </div>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-009">
+          <label for="rule-009">
+            Je ne comprends pas, je veux un font-size de 20 pixels sur les <code>li</code> donc j'ai fais 20 / 16 pour convertir en em mais ils sont en 22.5px 😮
+          </label>
+        </div>
+      </div>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-010">
+          <label for="rule-010">
+            Pourquoi le h4 est tout petit ?
+          </label>
+        </div>
+      </div>
+      <h3>Carte image à gauche</h3>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-011">
+          <label for="rule-011">
+            Pourquoi mes images sont à l'extérieur de leur carte ?
+          </label>
+        </div>
+      </div>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-012">
+          <label for="rule-012">
+            Le padding de 212 pixels devrait être à gauche. Je ne comprends pas.
+          </label>
+        </div>
+      </div>
+      <h3>Carte verticale</h3>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-014">
+          <label for="rule-014">
+            Mes images ne s'affichent pas, pourtant le src est bon non ?
+          </label>
+        </div>
+      </div>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-015">
+          <label for="rule-015">
+            Qu'est-ce que j'ai fait de mal ? J'ai créé le css mais il ne marche pas.
+          </label>
+        </div>
+      </div>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-016">
+          <label for="rule-016">
+            Le paragraphe devrait passer au dessus de l'image
+          </label>
+        </div>
+      </div>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-017">
+          <label for="rule-017">
+            Ok le texte passe bien au dessus de l'image mais il est illisible.
+          </label>
+        </div>
+      </div>
+      <h3>Dernier conteneur (classe section)</h3>
+      <div class="rule">
+        <div class="form-set">
+          <input type="checkbox" name="" id="rule-018">
+          <label for="rule-018">
+            J'ai mis ma classe ui-black donc le fond devrait être noir et le texte en blanc normalement. Pourquoi ça marche pas ?
+          </label>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <h2>Challenge intégration plugin JS</h2>
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="rule-019">
+        <label for="rule-019">
+          Créez une page `galerie-photos.html` avec <a href="https://feimosi.github.io/baguetteBox.js/">baguetteBox.js</a>. Les images sont dans le dossier <em>img/galerie.</em>
+        </label>
+      </div>
+    </div>
+
+
+
+
+    <div class="rule">
+      <div class="form-set">
+        <input type="checkbox" name="" id="done">
+        <label for="done">
+          <img src="https://media.tenor.com/images/30db77cc0a6d62afe10866197dc85d24/tenor.gif" alt="">
+          <h2>J'ai tout fini</h2>
+        </label>
+      </div>
+    </div>
+
+
+  </main>
+
+</body>
+</html>
