@@ -16,4 +16,5 @@ Objectif : comment créer une grille de mise en page et la faire évoluer en res
 Objectif : Apprendre à se débrouiller dans la recherche et résolutions de bugs avec un site tout cassé. Apprendre à lire et suivre la documentation d'un plugin Javascript.\
 [Accéder au cours et TP](./TP04-06_debugguer-CSS_plugin-js)
 5. **Consolidation**\
-Objectif : Intégrer un site vitrine responsive de quelques pages
+Objectif : Intégrer un site vitrine responsive de quelques pages.\
+[Accéder au cours et TP](./TP0506-06_integration-web)
