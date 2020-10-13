@@ -3,7 +3,7 @@ Vous allez intégrer la maquette et ses déclinaisons responsives qui se trouven
 N'oubliez pas d'appeler le fichier _reboot.css_ pour pouvoir avoir des styles propres dès le départ.
 
 ## Comment me rendre votre travail ?
-Un zip par mail à bonjour[at]davidpollet . fr.
+Un zip par mail à bonjour[at]davidpollet . fr. __À rendre pour le 01 novembre (2020). Votre zip doit être nommé classe_nom-prenom.zip (ex: app_doe-john.zip)__
 
 ⚠️⚠️ __Vos pages doivent être en HTML sinon, je ne corrige pas.__ Vous pouvez travailler en php si vous le souhaitez pour profiter des `include` mais dans ce cas, faites un copié/coller du html généré dans un fichier HTML.⚠️⚠️
 
@@ -19,6 +19,7 @@ Un zip par mail à bonjour[at]davidpollet . fr.
 ## Barême de notation
 - 15 points pour l'intégration
 - 5 points pour la qualité du code. La qualité du code inlut le choix des bonnes balises HTML et la lisibilité de votre code.
+
 
 
 ## Crédits
